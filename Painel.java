@@ -16,19 +16,31 @@ public Painel(){
 	janela.setTitle("Painel");
 	janela.setSize(300,300);
 	janela.setLocation(500,250);
+
+	TextField tfNome = new TextField();
+	TextField tfIdade = new TextField();
+	TextField tfEndereco = new TextField();
+
+	Button btnOk = new Button("Ok");
+	Button btnSair = new Button("Sair");
+	Button btnMostrar = new Button("Mostrar");
+	Button btnLimpar = new Button("Limpar");
 	
 	janela.add(main);
-	painelPrinc.add(new Button("a"));
-	painelPrinc.add(new Button("a"));
-	painelPrinc.add(new Button("a"));
-	painelPrinc.add(new Button("a"));
-	painelPrinc.add(new Button("a"));
-	painelPrinc.add(new Button("a"));
+
+	painelPrinc.add(new Label("Nome: "));
+	painelPrinc.add(tfNome);
+	painelPrinc.add(new Label("Idade: "));
+	painelPrinc.add(tfIdade);
+	painelPrinc.add(new Label("Endereço: "));
+	painelPrinc.add(tfEndereco);
 	main.add(painelPrinc);
-	painelSpr.add(new Button("a"));
-	painelSpr.add(new Button("a"));
-	painelSpr.add(new Button("a"));
-	painelSpr.add(new Button("a"));
+
+	painelSpr.add(btnOk);
+	painelSpr.add(btnLimpar);
+	painelSpr.add(btnMostrar);
+	painelSpr.add(btnSair);
+
 	main.add(painelSpr);
         janela.setVisible(true);    
 
