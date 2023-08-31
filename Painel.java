@@ -6,7 +6,7 @@ public class Painel{
 JFrame janela = new JFrame();	
 
 JPanel main = new JPanel(new GridLayout(2, 1));
-JPanel painelPrinc = new JPanel(new GridLayout(3, 2));
+JPanel painelPrinc = new JPanel(new GridLayout(3, 2, 10, 10));
 JPanel painelSpr = new JPanel(new GridLayout(1, 4));
 	
 JTextField txt = new JTextField(5);
